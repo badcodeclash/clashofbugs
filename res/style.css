@@ -1,0 +1,141 @@
+*{
+	margin:0;
+	padding:0;
+	color:inherit;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#fff;	
+	font-weight:bold;
+	text-decoration:none;
+}
+*::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+*::-webkit-scrollbar-track {
+    
+}
+ 
+*::-webkit-scrollbar-thumb {
+	background: #fff;
+}
+
+input[name='trap']{
+	display:none;
+}
+
+
+.wrap{
+	width:100%; 
+	background-image:url(bg.png);
+	background-size:10px;
+
+	max-width: 600px;
+	margin: auto;
+}
+
+.wrap .screen{
+	width:100%; 
+	text-align:center;
+	background-color:transparent;
+	padding:10px 0;
+}
+
+
+
+.wrap .screen form *{
+	width:94%;
+	padding:5px;
+	margin:10px auto;
+	background-color:#e62739;
+	border:none;
+	font-size:18px;
+}
+
+
+.wrap .screen p{
+	padding:5px 0;
+}
+
+.wrap .screen .vs{
+	position:relative;
+	z-index:1;
+	padding:0;
+	font-size:24px;
+}
+
+.wrap .screen .vs:before{
+	content:'';
+	position:absolute;
+	width:88px; height:88px;
+	left:0; right:0; top:0; bottom:0;
+	margin:auto;
+	background-image:url(vs.png);
+	z-index:-1;
+}
+
+.wrap .screen .status .bar{
+	width:80%; height:10px;
+	margin:0 auto;
+	border:3px solid transparent;
+	outline:1px solid white;
+}
+
+.wrap .screen .status .wrap{
+	min-height:100px;
+	max-height:300px;
+	overflow-x: hidden;
+	overflow-Y:scroll;
+	background: black;
+}
+
+
+.wrap .screen .status .log{
+	text-align:left;
+}
+
+.wrap .screen .status .bar div{
+	width:25%; height:100%;
+	background:red;
+}
+
+.wrap .screen .logo{
+	width:90%;
+	height:80px;	
+	margin:auto;
+	background-image:url(logo.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.wrap .screen .note{
+	font-size:20px;
+}
+
+.wrap .screen .message{
+	color:#e62739;
+}
+
+.wrap .screen a, .wrap .screen form, .wrap .screen .status{
+	margin:35px 5%;
+	position:relative;
+	box-sizing: border-box;
+	display:block;
+	width:90%;
+	background-color:black;
+}
+.wrap .screen a:before, .wrap .screen form:before, .wrap .screen .status:before{
+	content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    bottom: -15px;
+    right: -15px;
+	border-style: solid;
+	border-width: 20px;
+	-moz-border-image: url(border.png) 20 repeat;
+	-webkit-border-image: url(border.png) 20 repeat;
+	-o-border-image: url(border.png) 20 repeat;
+	border-image: url(border.png) 20 repeat;
+	pointer-events: none;
+}
